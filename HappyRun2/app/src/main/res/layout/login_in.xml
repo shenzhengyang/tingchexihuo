@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/login_in_shape1"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="@drawable/login_in_shape2"
+            android:layout_marginTop="100dp"
+            android:src="@mipmap/login_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="#414143"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:src="@mipmap/yonghu"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <EditText
+                android:id="@+id/name"
+                android:textColor="#ffffff"
+                android:textColorHint="#77787A"
+                android:background="#414143"
+                android:hint="请输入邮箱/账号/手机号"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <TextView
+            android:background="#636365"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="#414143"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:src="@mipmap/mima"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <EditText
+                android:id="@+id/password"
+                android:textColor="#ffffff"
+                android:textColorHint="#77787A"
+                android:background="#414143"
+                android:hint="请输入登录密码"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <Button
+                android:background="@drawable/login_in_shape3"
+                android:layout_marginRight="10dp"
+                android:textColor="#ffffff"
+                android:text="忘记密码"
+                android:layout_gravity="center_vertical"
+                android:layout_width="80dp"
+                android:layout_height="40dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/regist"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:background="#222222"
+                android:text="新用户注册"
+                android:layout_weight="2"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+            <TextView
+                android:background="#424242"
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/login_Button"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:background="#222222"
+                android:text="登录"
+                android:layout_weight="5"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+        </LinearLayout>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center"
+            android:textSize="10dp"
+            android:textColor="#FFFFFF"
+            android:text="第三方登录"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/weixin"
+                android:layout_width="26dp"
+                android:layout_height="26dp" />
+            <ImageView
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/weibo"
+                android:layout_width="26dp"
+                android:layout_height="26dp" />
+            <ImageView
+                android:src="@mipmap/qq"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/have_aTry"
+            android:background="#0D0D0D"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#E6E6E6"
+            android:textSize="16dp"
+            android:text="跳过注册直接试用"
+            android:layout_width="240dp"
+            android:layout_height="44dp" />
+    </LinearLayout>
+
+</LinearLayout>

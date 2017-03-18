@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.zy.happyrun">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:name=".My_Information.My_Information_Applycation"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="h4imAgwte5V5mUDqyNNPASf9QIvw1FZO" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity
+            android:name=".Login.Activity.Login_Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login.Activity.Regist_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Main_pager.Activity.Mainpager_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".My_Information.Activity.My_InformationActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".My_Information.Activity.My_Rank"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".My_Information.Activity.jianpai_jifen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Cyclists_said.Activity.Cyclists_activity_one"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Cyclists_said.Activity.Cyclists_mainPager"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Cyclists_ring.Activity.Cyclists_ring_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Cyclists_ring.Activity.Cyclists_ring_WebViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".more.Activity.more_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".more.Activity.AboutTingche"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Start.Activity.Main_Start"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Cyclists_ring.Activity.Cyclists_ring_paihangbang"
+            android:label="@string/title_activity_cyclists_ring_paihangbang"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

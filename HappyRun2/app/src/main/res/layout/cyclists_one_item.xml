@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            <ImageButton
+                android:layout_marginLeft="10dp"
+                android:background="#808080"
+                android:layout_width="100dp"
+                android:layout_height="80dp" />
+            <TextView
+                android:id="@+id/cyclists_one_text"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:text="广告摊位"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="#848588"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+</LinearLayout>
